@@ -1,0 +1,81 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 🌟 Estilos de la barra de navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: #022d4f; /* Color de fondo */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*  Estilos del logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.logo h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilos del botón de inicio de sesión */
+.login-btn {
+    background-color: white;
+    color: #022d4f;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #022d4f;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #022d4f;
+    color: white;
+}
+
+/*  Línea divisora */
+.divider {
+    width: 80%;
+    height: 2px;
+    background-color: #022d4f;
+    margin: 0 auto;
+    opacity: 0.3;
+}
+
+/*  Estilos del contenido principal */
+.hero {
+    text-align: center;
+    padding: 8rem 2rem;
+    background-color: #f8f9fa;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
