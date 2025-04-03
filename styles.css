@@ -457,3 +457,40 @@ nav {
     line-height: 1.5; /* Aumenta el espacio entre líneas para mejor legibilidad */
     
 }
+
+/* Imagen INICIO */
+
+
+.image-containerInicio img {
+    width: 480px;  /* Ajusta el ancho */
+    height: 330px; /* Ajusta la altura */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+    border-radius: 5px; /* Opcional, para bordes redondeados */
+    position: absolute;
+    top: 160px; /* Ajusta según necesites */
+    right: 5%; /* Ajusta a la derecha */
+    align-items: center;
+    margin-top: 15px; /* Ajusta la distancia con el título */
+    
+}
+
+/* Estilos del botón Descubre mas */
+.Descubremas-button {
+    background: linear-gradient(to right, #033c68, #0a1558, #004A80);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-left: 200px; /* Mueve el botón a la derecha */
+}
+
+
+/* Cambia el color del botón al pasar el cursor sobre él */
+
+.Descubremas-button:hover {
+    filter: brightness(1.2); /* Aumenta el brillo */
+}
