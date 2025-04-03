@@ -1,4 +1,7 @@
-/* Reset básico */
+/* CSS SERVICIOS */
+/*----------------
+------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -430,3 +433,27 @@ nav {
     font-size: 9px; /* Tamaño más pequeño para la información legal */
 }
 
+/* CSS INCIO */
+/*----------------
+------------------*/
+
+/* Estilos de la descripción INICIO*/
+.descriptionIndex {
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 1rem;
+
+}
+
+.descriptionIndex h2 {
+    color: #1A2D88; /* Color azul para el título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    
+}
+
+.descriptionIndex p {
+    text-align: justify; /* Justifica el texto */
+    color: #1A2D88; /* Color gris oscuro para el texto */
+    line-height: 1.5; /* Aumenta el espacio entre líneas para mejor legibilidad */
+    
+}
