@@ -6,7 +6,7 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* 🌟 Estilos de la barra de navegación */
+/*  Estilos de la barra de navegación */
 nav {
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@ nav {
 }
 
 .logo h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: white;
 }
