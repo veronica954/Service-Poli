@@ -85,26 +85,13 @@ nav {
     padding: 8rem 2rem;
     background-color: #f8f9fa;
 }
-
-.hero h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1.5rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 2rem;
-}
-
 /* Estilos para la barra superior */
 .top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    background-color: #858f93b0; /* Color de fondo gris claro */
+    background-color: #adb0b2b0; /* Color de fondo gris claro */
     font-size: 1.1rem;
     color: white;
 }
@@ -125,7 +112,7 @@ nav {
 /* Estilos del campo de búsqueda */
 .search-login input {
     padding: 8px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #b3b2b2;
     border-radius: 20px;
     outline: none;
 }
@@ -159,17 +146,12 @@ nav {
 
 }
 
-.description .title {
-    font-size: 1.8rem;
-    color: #1E3A8A;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+.description h2 {
+    color: #1A2D88; /* Color azul para el título */
 }
 
-.description .text { /*Botón buscar*/
-    font-size: 1.2rem;
-    color: #cbc9c9;
-    line-height: 1.5;
+.description p {
+    color: #1A2D88; /* Color gris oscuro para el texto */
 }
 
 /*Texto Servicos Destacados*/
@@ -179,7 +161,7 @@ nav {
     right: 250px; /* Ajusta la distancia desde la derecha */
     font-size: 24px;
     font-weight: bold;
-    color: #1d2d5b;
+    color: #1A2D88;
 }
 
 /* Imagen servicios */
@@ -187,7 +169,7 @@ nav {
 .description {
     width: 80%;
     margin: 0 auto;  /* Centrar el contenedor de texto */
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
 }
