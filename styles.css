@@ -594,7 +594,7 @@ nav {
     line-height: 1.5; /* Aumenta el espacio entre líneas para mejor legibilidad */
     width: 25%;
     margin-left: 70%; /*valor para moverlo más a la derecha */
-    text-align: justify;
+    
 }
 
 /* Imagen NOSOTROS */
@@ -667,7 +667,7 @@ nav {
 /* TITULO 3 NOSOTROS*/
 
 .description3Contactanos h2 {
-    margin-top: 30px; /* Sube el texto arriba */
+    margin-top: -250px; /* Sube el texto arriba */
     color: #1A2D88; /* Color azul para el título */
     margin-bottom: 0px; /* Espacio debajo del título */
     margin-left: 0%; /*valor para moverlo más a la derecha */
@@ -680,6 +680,34 @@ nav {
     padding: 1rem;
 
 }
+
+.contact-box {
+    padding: 15px;
+    width: fit-content;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #1A2D88;
+    font-size: 12px; /* Tamaño de letra reducido */
+}
+
+
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+
+.contact-box a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Mantiene el color del texto del párrafo */
+}
+
+.contact-box p {
+    margin: 15px 0; /* Espaciado entre líneas */
+}
+
+
 
 /* Imagen Contactanos */
 
@@ -697,59 +725,50 @@ nav {
     height: auto; /* Mantiene la proporción */
 }
 
-
-/* Sección telefono fijo */
-.descriptiontelefono p {
-    margin-top: -15px; /* Sube el texto arriba */
-    text-align: justify; /* Justifica el texto */
+/* Sección de TESTIMONIOS */
+.testimonials {
+    margin-top: -150px; /* Sube el texto arriba */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre elementos */
+    padding: 20px;
+    margin-left: 45%; /*valor para moverlo más a la derecha */
     color: #1A2D88; /* Color gris oscuro para el texto */
-    line-height: 1.5; /* Aumenta el espacio entre líneas para mejor legibilidad */
-    width: 25%;
-    margin-left: 2%; /*valor para moverlo más a la derecha */
-    font-size: 12px; /* Ajusta el tamaño de la letra */
+  
+
+}
+
+/* Estilos para las tarjetas */
+.card1, .card2 {
+    background-color: #5FA8D3;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    max-width: 320px;
+   
+}
+.testimonials p {
     text-align: justify;
-
-
 }
-/* Sección Numeor Nacional */
-.descriptionnumeronacional p {
-    margin-top: 30px; /* Sube el texto arriba */
-    text-align: justify; /* Justifica el texto */
+
+/*Estilo Tarjeta 3*/
+.card3 {
+    
+    background-color: #5FA8D3;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    max-width: 320px;
     color: #1A2D88; /* Color gris oscuro para el texto */
-    line-height: 1.5; /* Aumenta el espacio entre líneas para mejor legibilidad */
-    width: 25%;
-    margin-left: 2%; /*valor para moverlo más a la derecha */
-    font-size: 12px; /* Ajusta el tamaño de la letra */
+    margin-left: 48%; /*valor para moverlo más a la derecha */
+}
+
+.card3 p{
     text-align: justify;
-
-
 }
 
-/* Sección Correo Contactanos */
-.descriptioncorreocontactanos p {
-    margin-top: 30px; /* Sube el texto arriba */
-    text-align: justify; /* Justifica el texto */
-    color: #1A2D88; /* Color gris oscuro para el texto */
-    line-height: 1.5; /* Aumenta el espacio entre líneas para mejor legibilidad */
-    width: 25%;
-    margin-left: 2%; /*valor para moverlo más a la derecha */
-    font-size: 12px; /* Ajusta el tamaño de la letra */
-    text-align: justify;
-
-
-}
-
-/* Sección Horario de atencion */
-.descriptionhorarioatencion p {
-    margin-top: 30px; /* Sube el texto arriba */
-    color: #1A2D88; /* Color gris oscuro para el texto */
-    line-height: 1.5; /* Aumenta el espacio entre líneas para mejor legibilidad */
-    width: 20%;
-    margin-left: 2%; /*valor para moverlo más a la derecha */
-    font-size: 12px; /* Ajusta el tamaño de la letra */
-
-
-
-}
 
 
