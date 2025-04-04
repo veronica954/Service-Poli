@@ -498,3 +498,36 @@ nav {
 /* CSS NOSOTROS */
 /*----------------
 ------------------*/
+
+/* Estilos de la descripción Nosotros*/
+.descriptionNosotros {
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 1rem;
+
+}
+
+.descriptionNosotros h2 {
+    margin-top: 10px; /* Sube el texto arriba */
+    color: #1A2D88; /* Color azul para el título */
+    margin-bottom: 0px; /* Espacio debajo del título */
+
+    
+}
+
+.descriptionParrafoNosotros {
+    max-width: 550px;
+    margin: 1rem auto;
+    padding: 1rem;
+
+}
+
+.descriptionParrafoNosotros p {
+    margin-top: -80px; /* Sube el texto arriba */
+    text-align: justify; /* Justifica el texto */
+    color: #1A2D88; /* Color gris oscuro para el texto */
+    line-height: 1.5; /* Aumenta el espacio entre líneas para mejor legibilidad */
+    width: 165%;
+    margin-left: 45%; /*valor para moverlo más a la derecha */
+    text-align: justify;
+}
