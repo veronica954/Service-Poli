@@ -547,7 +547,7 @@ nav {
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
     text-align: center;
-    color: white; /* Color del texto */
+    color: #1A2D88; /* Color del texto */
     font-size: 18px;
     font-weight: bold;
     width: 150px; /* Ancho de cada tarjeta */
@@ -596,3 +596,18 @@ nav {
     margin-left: 70%; /*valor para moverlo más a la derecha */
     text-align: justify;
 }
+
+/* Imagen NOSOTROS */
+
+/* Contenedor de la imagen */
+.image-containerNOSOTROS {
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    height: 100px;
+    margin-top: 100px; /* Ajusta el espacio superior */
+}
+
+
+
