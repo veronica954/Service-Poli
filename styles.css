@@ -531,3 +531,24 @@ nav {
     margin-left: 45%; /*valor para moverlo más a la derecha */
     text-align: justify;
 }
+
+/*TARJETAS NOSOTROS*/
+
+.tarjetas-container-nosotros {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.tarjetas-container-nosotros div {
+    background-color: #5FA8D3; /* Color de fondo */
+    padding: 15px 30px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    text-align: center;
+    color: white; /* Color del texto */
+    font-size: 18px;
+    font-weight: bold;
+    width: 150px; /* Ancho de cada tarjeta */
+}
