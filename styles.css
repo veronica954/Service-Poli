@@ -634,7 +634,6 @@ nav {
 
 .descriptionParrafoContactanos p {
         display: flex;
-        flex-direction: column; /* Asegura que los párrafos estén en columna */
         margin-left: 3%;
         margin-top: 10px;
         text-align: justify; /* Justifica el texto */
@@ -646,6 +645,40 @@ nav {
     font-weight: 600; 
     opacity: 0.85; /* Reduce la opacidad un poco */
     letter-spacing: 0.5px; /* Separa un poco las letras */
+}
+
+/* TITULO 2 NOSOTROS*/
+
+.description2Contactanos h2 {
+    margin-top: -163px; /* Sube el texto arriba */
+    color: #1A2D88; /* Color azul para el título */
+    margin-bottom: 0px; /* Espacio debajo del título */
+    margin-left: 60%; /*valor para moverlo más a la derecha */
+
+}
+
+.description2Contactanos {
+
+    margin: 1rem auto;
+    padding: 1rem;
+
+}
+
+/* TITULO 3 NOSOTROS*/
+
+.description3Contactanos h2 {
+    margin-top: 30px; /* Sube el texto arriba */
+    color: #1A2D88; /* Color azul para el título */
+    margin-bottom: 0px; /* Espacio debajo del título */
+    margin-left: 0%; /*valor para moverlo más a la derecha */
+
+}
+
+.description3Contactanos {
+
+    margin: 1rem auto;
+    padding: 1rem;
+
 }
 
 /* Imagen Contactanos */
@@ -665,84 +698,58 @@ nav {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*TARJETAS NOSOTROS*/
-
-.tarjetas-container-nosotros {
-    display: flex;
-    justify-content: center; /* Centra las tarjetas horizontalmente */
-    gap: 260px; /* Espacio entre las tarjetas */
-    margin-top: 20px; /* Espacio superior */
-}
-
-.tarjetas-container-nosotros div {
-    background-color: #5FA8D3; /* Color de fondo */
-    padding: 15px 30px;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
-    text-align: center;
-    color: #1A2D88; /* Color del texto */
-    font-size: 18px;
-    font-weight: bold;
-    width: 150px; /* Ancho de cada tarjeta */
-}
-
-/* Sección parrafo proposito */
-
-.descriptionParrafoproposito {
-    max-width: 400px;
-    margin: 1rem auto;
-    padding: 1rem;
-
-}
-
-.descriptionParrafoproposito p {
+/* Sección telefono fijo */
+.descriptiontelefono p {
     margin-top: -15px; /* Sube el texto arriba */
     text-align: justify; /* Justifica el texto */
     color: #1A2D88; /* Color gris oscuro para el texto */
     line-height: 1.5; /* Aumenta el espacio entre líneas para mejor legibilidad */
-    width: 100%;
-    margin-left: -10%; /*valor para moverlo más a la derecha */
+    width: 25%;
+    margin-left: 2%; /*valor para moverlo más a la derecha */
+    font-size: 12px; /* Ajusta el tamaño de la letra */
     text-align: justify;
+
+
 }
-
-/* Sección parrafo Mision */
-
-
-.descriptionParrafomision p {
-    margin-top: -223px; /* Sube el texto arriba */
+/* Sección Numeor Nacional */
+.descriptionnumeronacional p {
+    margin-top: 30px; /* Sube el texto arriba */
     text-align: justify; /* Justifica el texto */
     color: #1A2D88; /* Color gris oscuro para el texto */
     line-height: 1.5; /* Aumenta el espacio entre líneas para mejor legibilidad */
     width: 25%;
-    margin-left: 35%; /*valor para moverlo más a la derecha */
+    margin-left: 2%; /*valor para moverlo más a la derecha */
+    font-size: 12px; /* Ajusta el tamaño de la letra */
     text-align: justify;
+
+
 }
 
-/* Sección parrafo Vision */
-
-.descriptionParrafovision p {
-    margin-top: -132px; /* Sube el texto arriba */
+/* Sección Correo Contactanos */
+.descriptioncorreocontactanos p {
+    margin-top: 30px; /* Sube el texto arriba */
     text-align: justify; /* Justifica el texto */
     color: #1A2D88; /* Color gris oscuro para el texto */
     line-height: 1.5; /* Aumenta el espacio entre líneas para mejor legibilidad */
     width: 25%;
-    margin-left: 70%; /*valor para moverlo más a la derecha */
+    margin-left: 2%; /*valor para moverlo más a la derecha */
+    font-size: 12px; /* Ajusta el tamaño de la letra */
     text-align: justify;
+
+
 }
 
+/* Sección Horario de atencion */
+.descriptionhorarioatencion p {
+    margin-top: 30px; /* Sube el texto arriba */
+    color: #1A2D88; /* Color gris oscuro para el texto */
+    line-height: 1.5; /* Aumenta el espacio entre líneas para mejor legibilidad */
+    width: 20%;
+    margin-left: 2%; /*valor para moverlo más a la derecha */
+    font-size: 12px; /* Ajusta el tamaño de la letra */
 
+
+
+}
 
 
