@@ -73,6 +73,12 @@ nav {
     color: white;
 }
 
+/*Link iniciar sesion*/
+.search-login a {
+    text-decoration: none; /* Eliminar subrayado del enlace */
+}
+
+
 /*  Línea divisora */
 .divider {
     width: 80%;
@@ -886,6 +892,7 @@ nav {
     text-align: center; /* Centra el texto dentro del div */
 }
 
+/*Link politica registro*/
 .link-politica a,
 .form-footer a {
     color: #1c3b6f; /* Color azul oscuro */
