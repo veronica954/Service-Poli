@@ -1,62 +1,39 @@
-<!DOCTYPE html> <!-- Declaración que indica que el documento está escrito en HTML5 -->
-<html lang="es"> <!-- Atributo de idioma -->
-<head>
-    <meta charset="UTF-8"> <!-- Permite caracteres especiales -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Página responsive -->
-    <title>Service Poli</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Icono favicon -->
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos -->
-</head>
-<body> 
-    <!-- Barra de navegación -->
-    <nav>
-        <div class="logo"> 
-            <img src="imagenes/logo.png" alt="Logo de Service Poli">
-            <a href="1Index.html" class="titulo-link">
-                <h2 class="titulo-texto">SERVICE POLI</h2>
-            </a>
-        </div> 
-        <div class="cerrar-sesion-container-bv">
-            <a href="login.html" class="cerrar-sesion-link-bv">Cerrar sesión</a>
+<section class="contenido-cr">
+    <div class="image-container-cr">
+      <img src="imagenes/icon.png" alt="Logo Service Poli" class="logo-central-cr">
+  
+      <!-- Aquí va tu formulario en modo overlay -->
+      <div class="overlay-form-cr">
+        <h2 class="form-title-cr">Crear Rol de Acceso</h2>
+  
+        <div class="form-row-cr">
+          <div class="form-group-cr">
+            <label for="rol-name">Nombre del Rol*</label>
+            <input id="rol-name" type="text" class="input-field-cr">
+          </div>
+          <div class="form-group-cr">
+            <label for="rol-area">Area</label>
+            <input id="rol-area" type="text" class="input-field-cr">
+          </div>
         </div>
-    </nav>
-
-    <!-- Contenedor general con menú lateral e imagen centrada -->
-    <div class="contenedor-principal-bv">
-
-        <!-- Menú lateral con botón hamburguesa -->
-        <aside class="menu-lateral-bv">
-            <!-- Botón para colapsar el menú -->
-            <button id="toggleMenuBtn-bv" class="toggle-menu-bv">☰</button>
-
-            <div id="menuContent-bv">
-                <!-- Primer grupo de opciones -->
-                <div class="menu-item">
-                    <button class="menu-titulo">Cuentas ▸</button>
-                    <ul class="submenu">
-                        <li><a href="#">Crear</a></li>
-                        <li><a href="#">Modificar</a></li>
-                    </ul>
-                </div>
-
-                <!-- Segundo grupo de opciones -->
-                <div class="menu-item">
-                    <button class="menu-titulo">Roles ▸</button>
-                    <ul class="submenu">
-                        <li><a href="#">Crear</a></li>
-                        <li><a href="#">Modificar</a></li>
-                    </ul>
-                </div>
-            </div>
-        </aside>
-
-        <!-- Contenido principal con imagen centrada -->
-        <section class="contenido-bv">
-            <img src="imagenes/icon.png" alt="Logo Service Poli" class="logo-central-bv">
-        </section>
-
+  
+        <div class="lists-row-cr">
+          <div class="list-container-cr">
+            <ul class="item-list-cr">
+              <li><span class="avatar-cr">A</span> List item <input type="checkbox"></li>
+              <!-- … más ítems … -->
+            </ul>
+          </div>
+          <div class="list-container-cr">
+            <ul class="item-list-cr">
+              <li><span class="avatar-cr">A</span> List item <input type="checkbox"></li>
+              <!-- … más ítems … -->
+            </ul>
+          </div>
+        </div>
+  
+        <button class="btn-cr">Crear Rol</button>
+      </div>
     </div>
-
-    <script src="bienvenida.js"></script>
-</body>
-</html>
+  </section>
+  
