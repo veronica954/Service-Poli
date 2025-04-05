@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos -->
 </head>
 <body> 
+    <div id="contenido">
     <nav> <!--Barra de navegación-->
         <div class="logo"> 
             <img src="imagenes/logo.png" alt="Logo de Service Poli">
@@ -25,7 +26,7 @@
 <div class="top-bar">
     <p>¿Listo para empezar a gestionar tus servicios de forma eficiente?</p>
     <div class="search-login">
-        <input type="text" placeholder="Buscar">
+        <input type="text" id="buscador" placeholder="Buscar">
         <a href="login.html" class="login-btn">Iniciar Sesión →</a>
     </div>
 </div>
@@ -66,7 +67,7 @@
             <div class="tarjeta-front">Seguridad de Datos</div>
             <div class="tarjeta-back">En Service Poli. la seguridad es nuestra prioridad. Utilizamos las mejores prácticas en términos de protección de datos, incluyendo encriptación de contraseñas y protocolos de seguridad para garantizar que la información de los usuarios y de los servicios esté siempre protegida</div>
         </div>
-    </div>
+    </div></div>
 </section>
  <!-- Contenedor de la imagen -->
  <section class="image-container">
@@ -74,13 +75,15 @@
 </section>
 
 <!-- Sección del Call to Action -->
+
 <section class="call-to-action">
     <div class="cta-content">
         <h3>¡Regístrate Ahora!</h3>
         <p>Únete hoy a Service Poli y lleva tu negocio al siguiente nivel</p>
-        <button class="cta-button">Registrarse</button>
     </div>
+    <a href="login.html" class="cta-button">Registrarse</a>
 </section>
+
 
 <!-- Pie de página -->
 <footer class="footer">
@@ -108,6 +111,6 @@
     </div>
     <p class="footer-bottom">© 2025, Todos los derechos reservados por Service Poli S.A.</p>
 </footer>
-   
+<script src="script.js"></script>
 </body>
 </html>

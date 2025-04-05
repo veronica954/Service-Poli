@@ -299,7 +299,7 @@ nav {
     color: #000;
     text-align: center;
     position: absolute;
-    top: 535px; /* Ajusta según necesites */
+    top: 521px; /* Ajusta según necesites */
     padding: 12px;
     left: 570px; /* Ajusta el valor según necesites */
     width: 52%;
@@ -308,7 +308,7 @@ nav {
     display: flex;
     flex-direction: column;  /* Asegura que los elementos se apilen en columna */
     align-items: center; /* Centra los elementos en el eje horizontal */
-    gap: 15px; /* Espaciado entre el texto y el botón */
+ 
 }
 
 
@@ -320,8 +320,8 @@ nav {
 }
 
 .cta-content p {
-    font-size: 16px; /* Tamaño del texto descriptivo */
-    margin: 5px 0; /* Espaciado entre el título y el párrafo */
+    font-size: 15px; /* Tamaño del texto descriptivo */
+    margin: 6px 0; /* Espaciado entre el título y el párrafo */
 }
 
 /* Estilos del botón dentro del Call to Action */
@@ -329,17 +329,30 @@ nav {
     background: linear-gradient(to right, #081a2b, #0a1558, #004A80);
     color: white; /* Texto en blanco */
     border: none; /* Sin borde */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño de fuente */
+    padding: 15px 20px; /* Espaciado interno */
+    font-size: 15px; /* Tamaño de fuente */
     font-weight: bold; /* Texto en negrita */
     border-radius: 5px; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     transition: background 0.3s ease; /* Efecto de transición suave al cambiar de color */
 }
 
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; 
+}
+
+
 /* Cambia el color del botón al pasar el cursor sobre él */
 .cta-button:hover {
     filter: brightness(1.2); /* Aumenta el brillo */
+}
+
+/*Link registrarse*/
+.call-to-action a {
+    text-decoration: none; /* Eliminar subrayado del enlace */
 }
 
 /* Estilos generales del footer */
