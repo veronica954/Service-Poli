@@ -1,3 +1,4 @@
+
 /* CSS SERVICIOS */
 /*----------------
 ------------------*/
@@ -19,7 +20,9 @@ nav {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 /*  Estilos del logo */
+
 .logo {
     display: flex;
     align-items: center;
@@ -29,16 +32,26 @@ nav {
 .logo img {
     width: 50px;
     height: auto;
+    display: block; 
 }
-
-.logo h2 {
+.titulo-texto {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: bold;
+    margin: 0;
     color: white;
+    line-height: 1; /* 👈 asegura que el alto no se estire */
+}
+
+.titulo-link {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    line-height: 1;
 }
 
 
-/*  Estilos de los enlaces de navegación */
+
+/*  Estilos de los enlaces de navegación inicio servicios nosotros contactanos*/
 .nav-links a {
     color: white;
     text-decoration: none;
@@ -56,23 +69,6 @@ nav {
     text-decoration: underline;
 }
 
-/* Estilos del botón de inicio de sesión */
-.login-btn {
-    background-color: white;
-    color: #022d4f;
-    padding: 0.8rem 1.5rem;
-    border: 2px solid #022d4f;
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.login-btn:hover {
-    background-color: #022d4f;
-    color: white;
-}
 
 /*Link iniciar sesion*/
 .search-login a {
@@ -930,5 +926,116 @@ mark {
     border-radius: 2px;
   }
   
-  /*CSS LOGIN*/
-  
+  /*CSS LOGIN*
+  -----------
+  -----------*/
+.login-layout {
+    display: flex;
+    height: 100vh;
+}
+
+.login-image {
+    flex: 1;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-image img {
+    max-width: 80%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.login-box {
+    flex: 1;
+    background-color: #fff;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box h1 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: #022d4f;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #022d4f;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre campos y botones */
+}
+
+form label {
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    color: #022d4f;
+}
+
+form input {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+/*ESTILO BOTON INICIAE SESION*/
+.login-button,
+.register-button {
+    width: fit-content;
+    min-width: 140px;
+    align-self: center;
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.login-button {
+    background-color: #022d4f;
+    color: white;
+    border: none;
+}
+
+.login-button:hover {
+    background-color: #0F75A9;
+}
+
+.register-button {
+    background-color: #0F75A9;
+    color: white;
+    border: none;
+}
+
+.register-button:hover {
+    background-color: #022d4f;
+}
+
+.forgot-password {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #022d4f;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
