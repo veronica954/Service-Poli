@@ -1149,7 +1149,10 @@ form input {
     padding: 30px;
 }
 
-
+.logo-central-bv {
+    width: 400px; /* Ajusta el tamaño de la imagen */
+    opacity: 0.5; /* Le damos transparencia a la imagen */
+}
 /* Imagen centrada */
 .logo-central-bv {
     width: 100%;
@@ -1295,3 +1298,260 @@ form input {
 /*CSS CREAR ROL
 ----------------
 ----------------*/
+
+.titulo-texto-cr {
+    color: white;
+    margin: 0;
+}
+
+.cerrar-sesion-link-cr {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cerrar-sesion-link-cr:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal con flexbox */
+.contenedor-principal-cr {
+    display: flex;
+    height: 100vh;
+}
+
+/* Menú lateral */
+.menu-lateral-cr {
+    width: 220px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu-lateral-cr.collapsed .toggle-menu-cr {
+    left: 0;
+}
+
+.menu-lateral-cr.collapsed {
+    width: 60px; /* En lugar de 0 */
+    padding: 20px 10px; /* Ajusta el padding si quieres que se vea más angosto */
+    overflow: hidden;
+}
+
+
+/* Ocultar elementos (contenido del menú) */
+.hidden {
+    display: none;
+}
+
+/* Botón de menú hamburguesa */
+.toggle-menu-cr {
+    background-color: #f4f4f4;
+    color: #022d4f;
+    border: none;
+    padding: 0px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 9999;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Estilos de los grupos de menú */
+.menu-item {
+    margin-bottom: 20px;
+}
+
+/* Botón del título de sección */
+.menu-titulo {
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #003366;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 5px 0;
+}
+
+/* Submenú oculto por defecto */
+.submenu {
+    list-style: none;
+    padding-left: 15px;
+    margin-top: 5px;
+    display: none;
+}
+
+.submenu li {
+    margin: 8px 0;  /* Espacio entre los elementos del submenú */
+}
+
+.menu-lateral-cr ul {
+    list-style-type: none;  /* Elimina los puntos de la lista */
+    padding: 0;     /* Elimina el padding por defecto */
+}
+
+.menu-lateral-cr li {
+    margin: 15px 0;
+}
+
+.menu-lateral-cr a {
+    text-decoration: none;  /* Elimina el subrayado */
+    color: #003366;     
+    font-weight: bold;                  
+}
+
+/* Sección de contenido (derecha) */
+.contenido-cr {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* ← Esto centra verticalmente */
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.logo-central-cr {
+    width: 400px; /* Ajusta el tamaño de la imagen */
+    opacity: 0.5; /* Le damos transparencia a la imagen */
+
+/* Imagen centrada */
+.logo-central-cr {
+    width: 100%;
+    max-width: 400px;
+    max-height: 80vh;
+    height: auto;
+    display: block;
+}
+.titulo-texto-cr {
+    color: white;
+    margin: 0;
+}
+
+.cerrar-sesion-link-cr {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cerrar-sesion-link-cr:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal con flexbox */
+.contenedor-principal-cr {
+    display: flex;
+    height: 100vh;
+}
+
+/* Menú lateral */
+.menu-lateral-cr {
+    width: 220px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu-lateral-cr.collapsed .toggle-menu-cr {
+    left: 0;
+}
+
+.menu-lateral-cr.collapsed {
+    width: 60px; /* En lugar de 0 */
+    padding: 20px 10px; /* Ajusta el padding si quieres que se vea más angosto */
+    overflow: hidden;
+}
+
+
+/* Ocultar elementos (contenido del menú) */
+.hidden {
+    display: none;
+}
+
+/* Botón de menú hamburguesa */
+.toggle-menu-cr {
+    background-color: #f4f4f4;
+    color: #022d4f;
+    border: none;
+    padding: 0px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 9999;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Estilos de los grupos de menú */
+.menu-item {
+    margin-bottom: 20px;
+}
+
+/* Botón del título de sección */
+.menu-titulo {
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #003366;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 5px 0;
+}
+
+/* Submenú oculto por defecto */
+.submenu {
+    list-style: none;
+    padding-left: 15px;
+    margin-top: 5px;
+    display: none;
+}
+
+.submenu li {
+    margin: 8px 0;  /* Espacio entre los elementos del submenú */
+}
+
+.menu-lateral-cr ul {
+    list-style-type: none;  /* Elimina los puntos de la lista */
+    padding: 0;     /* Elimina el padding por defecto */
+}
+
+.menu-lateral-cr li {
+    margin: 15px 0;
+}
+
+.menu-lateral-cr a {
+    text-decoration: none;  /* Elimina el subrayado */
+    color: #003366;     
+    font-weight: bold;                  
+}
+
+/* Sección de contenido (derecha) */
+.contenido-cr {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* ← Esto centra verticalmente */
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.logo-central-cr {
+    width: 400px; /* Ajusta el tamaño de la imagen */
+    opacity: 0.5; /* Le damos transparencia a la imagen */
+}
+/* Imagen centrada */
+.logo-central-cr {
+    width: 100%;
+    max-width: 400px;
+    max-height: 80vh;
+    height: auto;
+    display: block;
+}
