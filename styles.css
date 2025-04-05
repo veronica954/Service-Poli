@@ -1121,12 +1121,12 @@ form input {
 }
 
 .submenu li {
-    margin: 8px 0;
+    margin: 8px 0;  /* Espacio entre los elementos del submenú */
 }
 
 .menu-lateral-bv ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none;  /* Elimina los puntos de la lista */
+    padding: 0;     /* Elimina el padding por defecto */
 }
 
 .menu-lateral-bv li {
@@ -1134,9 +1134,9 @@ form input {
 }
 
 .menu-lateral-bv a {
-    text-decoration: none;
-    color: #003366;
-    font-weight: bold;
+    text-decoration: none;  /* Elimina el subrayado */
+    color: #003366;     
+    font-weight: bold;                  
 }
 
 /* Sección de contenido (derecha) */
@@ -1161,3 +1161,12 @@ form input {
 
 
 
+/*CSS Crear Usuario
+----------------
+----------------*/
+
+
+
+/*CSS CREAR ROL
+----------------
+----------------*/
