@@ -494,6 +494,11 @@ nav {
     margin-left: 200px; /* Mueve el botón a la derecha */
 }
 
+/*Link descubre mas*/
+.Descubremas a {
+    text-decoration: none; /* Eliminar subrayado del enlace */
+}
+
 
 /* Cambia el color del botón al pasar el cursor sobre él */
 
@@ -904,3 +909,10 @@ nav {
 .form-footer a:hover {
     text-decoration: underline; /* Subrayado al pasar el mouse */
 }
+
+mark {
+    background-color: rgb(141, 159, 224);
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+  

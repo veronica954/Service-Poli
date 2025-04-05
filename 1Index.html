@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos -->
 </head>
 <body> 
+    <div id="contenido">
     <nav> <!--Barra de navegación-->
         <div class="logo"> 
             <img src="imagenes/logo.png" alt="Logo de Service Poli">
@@ -25,18 +26,20 @@
 <div class="top-bar">
     <p>¿Listo para empezar a gestionar tus servicios de forma eficiente?</p>
     <div class="search-login">
-        <input type="text" placeholder="Buscar">
+        <input type="text" id="buscador" placeholder="Buscar">
         <a href="login.html" class="login-btn">Iniciar Sesión →</a>
     </div>
 </div>
+
     
     <div class="divider"></div> <!-- Línea divisora después de los links -->
-
      <!-- Sección de descripción -->
      <section class="descriptionIndex" style="margin-left: 5%; margin-top: 10px;">
         <h2><i>Gestiona usuarios de manera eficiente con Service Poli</i></h2>
         <p>Plataforma innovadora que permite a las empresas gestionar usuarios y servicios de manera eficiente. Con diferentes roles de usuario, como Administrador y Visualizador, la plataforma ofrece funcionalidades para la creación de usuarios, administración de servicios y un acceso fácil para visualizar los productos y servicios ofrecidos. Además, los usuarios pueden interactuar con la plataforma a través de un diseño intuitivo y accesible.</p>
     </section>
+
+</div>
 <!-- Contenedor de la imagen -->
 <section class="image-containerInicio">
     <img src="Imagenes/inicio.jpg" alt="Imagen de inicio" class="imagenInico">
@@ -47,7 +50,7 @@
 
 <section class="Descubre">
     <div class="Descubremas">
-        <button class="Descubremas-button">Descubre más</button>
+        <a href="Servicios.html" class="Descubremas-button">Descubre más</a>
     </div>
 </section>
 
@@ -78,6 +81,6 @@
     </div>
     <p class="footer-bottom">© 2025, Todos los derechos reservados por Service Poli S.A.</p>
 </footer>
-   
+<script src="script.js"></script>
 </body>
 </html>
