@@ -1149,6 +1149,9 @@ form input {
     padding: 30px;
 }
 
+.logo-central-bv {
+    width: 400px; /* Ajusta el tamaño de la imagen */
+    opacity: 0.5; /* Le damos transparencia a la imagen */
 
 /* Imagen centrada */
 .logo-central-bv {
@@ -1170,3 +1173,4 @@ form input {
 /*CSS CREAR ROL
 ----------------
 ----------------*/
+
