@@ -797,9 +797,9 @@ nav {
 
 /* Estilo del contenedor principal del formulario */
 .form-containerregistro {
-    width: 600px; /* Ancho fijo del formulario */
+    width: 550px; /* Ancho fijo del formulario */
     background: #f9f9f9; /* Color de fondo claro */
-    padding: 50px; /* Espaciado interno */
+    padding: 100px; /* Espaciado interno */
     border-radius: 2px; /* Bordes redondeados */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
     margin: 50px auto; /* Centrar el formulario en la pantalla */
@@ -808,7 +808,7 @@ nav {
 
 /* Estilo del logo y el encabezado */
 .logo-registro img {
-    width: 60px; /* Tamaño del logo */
+    width: 65px; /* Tamaño del logo */
     margin-bottom: 10px; /* Espaciado debajo del logo */
 }
 
@@ -826,14 +826,6 @@ nav {
     color: #1c3b6f; /* Color azul oscuro */
 }
 
-
-.texto-registro {
-    max-width: 459px;   /* Limita el ancho del párrafo */
-    margin: 0 auto 30px; /* Centra y da espacio inferior */
-    text-align: justify;    /* Justifica el texto */
-    padding: 0 10px; /* Espaciado lateral opcional */
-  }
-
 .texto-registro p {
     color: #1c3b6f;
     text-align: justify;
@@ -841,8 +833,6 @@ nav {
     margin-bottom: 30px; /*espacio a bajo */
 
 }
-
-
 
 .logo-registro p {
     text-align: center; /* Centra el texto */
@@ -852,22 +842,20 @@ nav {
     color: #1c3b6f;  /* Color azul */
 }
 
-
-
 /* Estilos del formulario y los campos de entrada */
-.form-group {
-    display: flex; /* Coloca los inputs en la misma línea */
-    justify-content: space-between; /* Espaciado uniforme entre los inputs */
+.form-groupR {
+    display: flex;
+    justify-content: center; /* 👈 Centra horizontalmente el grupo */
     gap: 10px; /* Separación entre inputs */
-    margin-bottom: 35px; /* Espaciado inferior entre grupos */
+    margin-bottom: 30px;
+    width: 100%;
 }
-
-.form-group input {
-    width: 48%; /* Cada input ocupa el 48% del ancho del contenedor */
-    padding: 10px; /* Espaciado interno */
-    border: 1px solid #ccc; /* Borde gris claro */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 14px; /* Tamaño de fuente */
+.form-groupR input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    
 }
 
 /* Botón de envío registro*/
@@ -879,7 +867,7 @@ nav {
 }
 
 .submit-btn {
-    width: 20%; /* Ocupar todo el ancho disponible */
+    width: 35%; /* Ocupar todo el ancho disponible */
     background: linear-gradient(to right, #033c68, #0a1558, #004080); /* Color azul oscuro */ 
     color: white; /* Texto en color blanco */
     border: none; /* Eliminar borde */
@@ -992,7 +980,7 @@ form input {
     border-radius: 8px;
     font-size: 1rem;
 }
-/*ESTILO BOTON INICIAE SESION*/
+/*ESTILO BOTON INICIO SESION*/
 .login-button,
 .register-button {
     width: fit-content;
