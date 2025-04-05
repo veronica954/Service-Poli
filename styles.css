@@ -1173,8 +1173,7 @@ form input {
 /*CSS CREAR ROL
 ----------------
 ----------------*/
-
-.titulo-texto-cr {
+titulo-texto-cr {
     color: white;
     margin: 0;
 }
@@ -1295,7 +1294,7 @@ form input {
     opacity: 0.5; /* Le damos transparencia a la imagen */
 
 /* Imagen centrada */
-.logo-central-bv {
+.logo-central-cr {
     width: 100%;
     max-width: 400px;
     max-height: 80vh;
@@ -1303,156 +1302,5 @@ form input {
     display: block;
 }
 
+/* ok */
 
-/* Contenedor con imagen de fondo y opacidad */
-.imagen-container {
-    position: relative;
-    background-image: url('imagenes/icon.png'); /* Ruta de tu imagen */
-    background-size: cover; /* Asegura que la imagen cubra el área disponible */
-    background-position: center; /* Centra la imagen */
-    height: 100vh; /* Hace que el contenedor ocupe toda la altura de la ventana */
-    opacity: 0.5; /* Aplica transparencia a la imagen */
-}
-
-/* Marca de agua sobre la imagen */
-.marca-agua {
-    position: absolute;
-    top: 50%; /* Posiciona la marca de agua en el centro vertical */
-    left: 50%; /* Posiciona la marca de agua en el centro horizontal */
-    transform: translate(-50%, -50%); /* Centra la marca de agua de forma exacta */
-    font-size: 3em;
-    color: rgba(255, 255, 255, 0.5); /* Color blanco con transparencia */
-    font-weight: bold;
-    pointer-events: none; /* Evita que la marca de agua interfiera con los clics */
-    z-index: 1; /* Asegura que la marca de agua quede encima del fondo */
-}
-
-/* Estilos adicionales para el menú y el contenido */
-.contenedor-principal-cr {
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu-lateral-cr {
-    width: 250px;
-    background-color: #333;
-    color: white;
-}
-
-.contenido-cr {
-    flex-grow: 1;
-    padding: 20px;
-}
-
-/* contenedor relativo para la imagen + overlay */
-.image-container-cr {
-    position: relative;
-    display: inline-block; /* o block según tu diseño */
-  }
-  
-  /* la imagen sigue igual */
-  .logo-central-cr {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  /* el formulario encima */
-  .overlay-form-cr {
-    position: absolute;
-    top: 10%;       /* ajusta para mover verticalmente */
-    left: 50%;      /* centra horizontal */
-    transform: translateX(-50%);
-    width: 80%;     /* ancho del formulario */
-    background-color: rgba(255,255,255,0.9);
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    z-index: 10;
-  }
-  
-  /* Estilos internos del formulario */
-  .form-title-cr {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-style: italic;
-  }
-  
-  .form-row-cr {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .form-group-cr {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-group-cr label {
-    margin-bottom: 0.3rem;
-    font-weight: 500;
-  }
-  
-  .input-field-cr {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  /* Las dos listas */
-  .lists-row-cr {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .list-container-cr {
-    flex: 1;
-    background-color: #f3ecff;
-    padding: 1rem;
-    border-radius: 6px;
-  }
-  
-  .item-list-cr {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .item-list-cr li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.4rem 0;
-    border-bottom: 1px solid #e0d8f5;
-  }
-  
-  .avatar-cr {
-    display: inline-block;
-    width: 24px; height: 24px;
-    line-height: 24px;
-    text-align: center;
-    background-color: #d8c4ff;
-    border-radius: 50%;
-    margin-right: 0.5rem;
-    font-weight: bold;
-  }
-  
-  /* Botón */
-  .btn-cr {
-    display: block;
-    margin: 0 auto;
-    padding: 0.6rem 2rem;
-    background: linear-gradient(180deg, #00607f, #004859);
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  .btn-cr:hover {
-    opacity: 0.9;
-  }
-  
