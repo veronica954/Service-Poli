@@ -770,5 +770,130 @@ nav {
     text-align: justify;
 }
 
+/*CSS REGISTRO
+--------------
+--------------*/
+
+/* Estilo del contenedor principal del formulario */
+.form-containerregistro {
+    width: 600px; /* Ancho fijo del formulario */
+    background: #f9f9f9; /* Color de fondo claro */
+    padding: 50px; /* Espaciado interno */
+    border-radius: 2px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    margin: 50px auto; /* Centrar el formulario en la pantalla */
+
+}
+
+/* Estilo del logo y el encabezado */
+.logo-registro img {
+    width: 60px; /* Tamaño del logo */
+    margin-bottom: 10px; /* Espaciado debajo del logo */
+}
+
+.logo-registro h2 {
+    text-align: center; /* Centra el texto */
+    display: block; /* Asegura que se comporte como un bloque */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto;
+}
+
+.logo-registro h2 {
+    margin-top: -50px; /* Mueve el título hacia arriba */
+    margin-bottom: 35px; /* Agrega más espacio debajo del título */
+    font-size: 22px; /* Tamaño del título */
+    color: #1c3b6f; /* Color azul oscuro */
+}
 
 
+.texto-registro {
+    max-width: 459px;   /* Limita el ancho del párrafo */
+    margin: 0 auto 30px; /* Centra y da espacio inferior */
+    text-align: justify;    /* Justifica el texto */
+    padding: 0 10px; /* Espaciado lateral opcional */
+  }
+
+.texto-registro p {
+    color: #1c3b6f;
+    text-align: justify;
+    font-size: 14px; /* Tamaño de letra reducido */
+    margin-bottom: 30px; /*espacio a bajo */
+
+}
+
+
+
+.logo-registro p {
+    text-align: center; /* Centra el texto */
+    margin-top: -30px; /* Lo sube hacia el título */
+    margin-bottom: 20px;/* Espacio inferior */
+    font-size: 14px;  /* Tamaño de fuente */
+    color: #1c3b6f;  /* Color azul */
+}
+
+
+
+/* Estilos del formulario y los campos de entrada */
+.form-group {
+    display: flex; /* Coloca los inputs en la misma línea */
+    justify-content: space-between; /* Espaciado uniforme entre los inputs */
+    gap: 10px; /* Separación entre inputs */
+    margin-bottom: 35px; /* Espaciado inferior entre grupos */
+}
+
+.form-group input {
+    width: 48%; /* Cada input ocupa el 48% del ancho del contenedor */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+/* Botón de envío registro*/
+
+.botonenviar {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    margin-top: 20px; /* Espacio superior opcional */
+}
+
+.submit-btn {
+    width: 20%; /* Ocupar todo el ancho disponible */
+    background: linear-gradient(to right, #033c68, #0a1558, #004080); /* Color azul oscuro */ 
+    color: white; /* Texto en color blanco */
+    border: none; /* Eliminar borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambio de cursor al pasar sobre el botón */
+    transition: background 0.3s ease;
+    margin-top: 10px; /* Espaciado superior */
+    transition: 0.3s; /* Suavizar el efecto al pasar el mouse */
+}
+
+/* Efecto hover en el botón */
+.submit-btn:hover {
+    background: linear-gradient(to right, #045ea5, #1733b8, #2757c6);
+    transform: scale(1.05); /* Aumenta un poco el tamaño */
+    box-shadow: 0 0 15px rgba(28, 59, 111, 0.6); /* Brillo sutil */
+}
+
+/* Estilos para los enlaces de la política de privacidad y el footer */
+.link-politica,
+.form-footer {
+    margin-top: 15px; /* Espaciado superior */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    text-align: center; /* Centra el texto dentro del div */
+}
+
+.link-politica a,
+.form-footer a {
+    color: #1c3b6f; /* Color azul oscuro */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+}
+
+/* fecto hover en los enlaces */
+.link-politica a:hover,
+.form-footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
