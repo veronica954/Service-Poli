@@ -1139,17 +1139,18 @@ form input {
     font-weight: bold;
 }
 
-/* Contenido principal */
+/* Sección de contenido (derecha) */
 .contenido-bv {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* ← Esto centra verticalmente */
     background-color: #ffffff;
     padding: 30px;
 }
 
-/* Logo centrado */
+
+/* Imagen centrada */
 .logo-central-bv {
     width: 100%;
     max-width: 400px;
@@ -1157,3 +1158,6 @@ form input {
     height: auto;
     display: block;
 }
+
+
+
