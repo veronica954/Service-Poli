@@ -1029,4 +1029,131 @@ form input {
 }
 
 
+/*CSS BIENVENIDA
+----------------
+----------------*/
 
+.titulo-texto-bv {
+    color: white;
+    margin: 0;
+}
+
+.cerrar-sesion-link-bv {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cerrar-sesion-link-bv:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal con flexbox */
+.contenedor-principal-bv {
+    display: flex;
+    height: 100vh;
+}
+
+/* Menú lateral */
+.menu-lateral-bv {
+    width: 220px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu-lateral-bv.collapsed .toggle-menu-bv {
+    left: 0;
+}
+
+.menu-lateral-bv.collapsed {
+    width: 60px; /* En lugar de 0 */
+    padding: 20px 10px; /* Ajusta el padding si quieres que se vea más angosto */
+    overflow: hidden;
+}
+
+
+/* Ocultar elementos (contenido del menú) */
+.hidden {
+    display: none;
+}
+
+/* Botón de menú hamburguesa */
+.toggle-menu-bv {
+    background-color: #f4f4f4;
+    color: #022d4f;
+    border: none;
+    padding: 0px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 9999;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Estilos de los grupos de menú */
+.menu-item {
+    margin-bottom: 20px;
+}
+
+/* Botón del título de sección */
+.menu-titulo {
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #003366;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 5px 0;
+}
+
+/* Submenú oculto por defecto */
+.submenu {
+    list-style: none;
+    padding-left: 15px;
+    margin-top: 5px;
+    display: none;
+}
+
+.submenu li {
+    margin: 8px 0;
+}
+
+.menu-lateral-bv ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-lateral-bv li {
+    margin: 15px 0;
+}
+
+.menu-lateral-bv a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+.contenido-bv {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+/* Logo centrado */
+.logo-central-bv {
+    width: 100%;
+    max-width: 400px;
+    max-height: 80vh;
+    height: auto;
+    display: block;
+}
