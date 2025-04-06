@@ -1151,7 +1151,6 @@ form input {
 
 .logo-central-bv {
     width: 400px; /* Ajusta el tamaño de la imagen */
-    opacity: 0.5; /* Le damos transparencia a la imagen */
 }
 /* Imagen centrada */
 .logo-central-bv {
@@ -1560,7 +1559,7 @@ form input {
 .campo-form-cr {
     display: flex; /* Usamos flexbox para que el contenido esté en una fila */
     align-items:normal; /* Alinea los elementos verticalmente al centro */
-
+    justify-content: space-between; /* Espacia los elementos horizontalmente */
 }
 
 .titulo-crear-cr {
@@ -1571,5 +1570,5 @@ form input {
 }
 
 .input-cr {
-    margin-right: 10px; /* Agrega espacio entre el checkbox y el texto */
+    margin-top: -2px; /* Ajusta la posición vertical del checkbox */
 }
