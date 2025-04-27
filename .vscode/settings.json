@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "package:ServicePoli",
+    "appService.deploySubpath": "target\\ServicePoli-1.0-SNAPSHOT.jar",
+    "appService.defaultWebAppToDeploy": "/subscriptions/c9716d40-947e-4378-9363-0699548c90e1/resourceGroups/ServicePoli2025/providers/Microsoft.Web/sites/ServicePoli2025"
+}
