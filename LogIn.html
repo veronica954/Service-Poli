@@ -33,11 +33,12 @@
             <form>
                 <label for="usuario">Nombre de Usuario</label>
                 <input type="text" id="usuario" name="usuario" placeholder="Nombre de Usuario" required>
-
+            
                 <label for="password">Contraseña</label>
                 <input type="password" id="password" name="password" placeholder="Contraseña" required>
-
-                <a href="#" class="login-button">Iniciar Sesión</a>
+            
+                <button type="submit" class="login-button">Iniciar Sesión</button>
+           
 
                 <a href="ForgotPassword.html" class="forgot-password">¿Has olvidado tu contraseña?</a>
 
@@ -45,6 +46,41 @@
                     Registrarse
                 </a>
 
+            </form>
+
+            <script>
+                async function iniciarSesion(event) {
+                    event.preventDefault(); // Evita que el formulario se envíe
+            
+                    // Obtén los valores ingresados por el usuario
+                    const usuarioIngresado = document.getElementById('usuario').value;
+                    const passwordIngresado = document.getElementById('password').value;
+            
+                    try {
+                        // Carga el archivo JSON con las credenciales
+                        const response = await fetch('./login.json'); // Asegúrate de usar un servidor local
+                        if (!response.ok) {
+                            throw new Error('No se pudo cargar el archivo JSON');
+                        }
+                        const credenciales = await response.json();
+            
+                        // Valida las credenciales
+                        if (usuarioIngresado === credenciales.usuario && passwordIngresado === credenciales.password) {
+                            alert('Inicio de sesión exitoso');
+                            // Redirige a otra página o realiza alguna acción
+                            window.location.href = 'bienvenida.html';
+                        } else {
+                            alert('Usuario o contraseña incorrectos');
+                        }
+                    } catch (error) {
+                        console.error('Error:', error);
+                        alert('Hubo un problema al iniciar sesión. Intenta nuevamente.');
+                    }
+                }
+            
+                // Asocia la función al formulario
+                document.querySelector('form').addEventListener('submit', iniciarSesion);
+            </script>
 
             </form>
         </section>
