@@ -35,3 +35,17 @@ toggleMenu.addEventListener('click', () => {
 });
 
 
+
+
+// Verificar sesión
+if (sessionStorage.getItem('usuarioActivo') !== 'true') {
+    window.location.href = 'login.html';
+}
+
+// Cerrar sesión
+document.querySelector('.cerrar-sesion-link-bv').addEventListener('click', function (event) {
+    event.preventDefault();
+    sessionStorage.removeItem('usuarioActivo');
+    window.location.href = 'login.html';
+});
+

@@ -62,16 +62,16 @@
             </div>
 
             <!-- Formulario -->
-            <form class="formulario-cr">
+            <form id="formulario-cr">
 
                 <div class="campo-form-cr">
                     <label>Nombres</label>
-                    <input type="text" class="input-cr">
+                    <input type="text" class="input-cr" id="nombres">
                 </div>
 
                 <div class="campo-form-cr">
                     <label>Accesos <span style="color:red;">*</span></label>
-                    <select class="input-cr">
+                    <select class="input-cr" id="Accesos">
                         <option>Escritura</option>
                         <option>Solo Lectura</option>
                     </select>
@@ -79,7 +79,7 @@
 
                 <div class="campo-form-cr">
                     <label>Apellidos</label>
-                    <input type="text" class="input-cr">
+                    <input type="text" class="input-cr" id="apellidos">
                 </div>
 
 
@@ -140,7 +140,8 @@
                 </div>
 
                 <div class="boton-crear-wrapper-cr">
-                    <a href="#" class="boton-crear-container-cr">Crear Usuario</a>
+                   <!----<a href="#" class="boton-crear-container-cr">Crear Usuario</a> -->
+                    <button type="submit" class="boton-crear-container-cr">Crear Usuario</button>
                 </div>
             </form>
         </section>
@@ -148,7 +149,7 @@
 
     </div>
 
-    <script src="bienvenida.js"></script>
+    <script src="Create.js"></script>
 </body>
 
 </html>

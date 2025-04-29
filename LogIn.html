@@ -67,6 +67,14 @@
                         // Valida las credenciales
                         if (usuarioIngresado === credenciales.usuario && passwordIngresado === credenciales.password) {
                             alert('Inicio de sesión exitoso');
+
+
+                     // 🔑 GUARDAMOS LA SESIÓN AQUÍ
+                     sessionStorage.setItem('usuarioActivo', 'true');
+
+
+
+
                             // Redirige a otra página o realiza alguna acción
                             window.location.href = 'bienvenida.html';
                         } else {
