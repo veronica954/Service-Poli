@@ -110,6 +110,41 @@
     <p class="footer-bottom">© 2025, Todos los derechos reservados por Service Poli S.A.</p>
   </footer>
 
+  <script>
+    document.querySelector('.submit-btn').addEventListener('click', function (event) {
+      event.preventDefault(); // Evita que el formulario se envíe
+  
+      // Captura los datos del formulario
+      const datosFormulario = {
+        empresa: document.querySelector('input[placeholder="Nombre de la Empresa"]').value,
+        nit: document.querySelector('input[placeholder="NIT"]').value,
+        correo: document.querySelector('input[placeholder="Correo"]').value,
+        telefono: document.querySelector('input[placeholder="Teléfono"]').value,
+        servicio: document.querySelector('input[placeholder="Tipo de servicio requerido"]').value,
+        sector: document.querySelector('input[placeholder="¿En qué sector opera su empresa?"]').value,
+        ciudad: document.querySelector('input[placeholder="Ciudad"]').value,
+        direccion: document.querySelector('input[placeholder="Dirección"]').value
+      };
+  
+      // Convierte los datos a formato JSON
+      const jsonDatos = JSON.stringify(datosFormulario, null, 2);
+  
+      // Crea un archivo descargable
+      const blob = new Blob([jsonDatos], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+  
+      // Crea un enlace para descargar el archivo
+      const enlace = document.createElement('a');
+      enlace.href = url;
+      enlace.download = 'datos_formulario.json'; // Nombre del archivo
+      enlace.click();
+  
+      // Limpia el objeto URL
+      URL.revokeObjectURL(url);
+    });
+  </script>
+
+
 </body>
 
 </html>
