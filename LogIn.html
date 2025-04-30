@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos -->
 
 </head>
-
+<script src="runtime.js"></script>
+<script src="polyfills.js"></script>
+<script src="main.js"></script>
 <body>
+
     <nav> <!--Barra de navegación-->
         <div class="logo">
             <img src="imagenes/logo.png" alt="Logo de Service Poli">
@@ -21,6 +24,7 @@
     </nav>
 
     <div class="divider"></div> <!-- Línea divisora después de los links -->
+    <mat-progress-bar mode="indeterminate" color="accent"></mat-progress-bar>
     <main class="login-layout">
         <div class="login-image">
             <img src="imagenes/icon.png" alt="Logo Service Poli">
@@ -47,6 +51,8 @@
                 </a>
 
             </form>
+<!-- Indicador de carga -->
+<app-loading></app-loading>
 
             <script>
                 async function iniciarSesion(event) {
@@ -66,9 +72,7 @@
             
                         // Valida las credenciales
                         if (usuarioIngresado === credenciales.usuario && passwordIngresado === credenciales.password) {
-                            alert('Inicio de sesión exitoso');
-
-
+                           
                      // 🔑 GUARDAMOS LA SESIÓN AQUÍ
                      sessionStorage.setItem('usuarioActivo', 'true');
 

@@ -62,85 +62,78 @@
             </div>
 
             <!-- Formulario -->
-            <form id="formulario-cr">
-
+            <form id="formulario-cr" class="formulario-cr">
                 <div class="campo-form-cr">
-                    <label>Nombres</label>
-                    <input type="text" class="input-cr" id="nombres">
+                    <label for="nombres">Nombres</label>
+                    <input type="text" id="nombres" class="input-cr">
                 </div>
-
+            
                 <div class="campo-form-cr">
-                    <label>Accesos <span style="color:red;">*</span></label>
-                    <select class="input-cr" id="Accesos">
+                    <label for="accesos">Accesos <span style="color:red;">*</span></label>
+                    <select id="accesos" class="input-cr">
                         <option>Escritura</option>
                         <option>Solo Lectura</option>
                     </select>
                 </div>
-
+            
                 <div class="campo-form-cr">
-                    <label>Apellidos</label>
-                    <input type="text" class="input-cr" id="apellidos">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" class="input-cr">
                 </div>
-
-
+            
                 <div class="campo-form-cr">
-                    <label>Cargo</label>
-                    <input type="text" class="input-cr">
+                    <label for="cargo">Cargo</label>
+                    <input type="text" id="cargo" class="input-cr">
                 </div>
-
+            
                 <div class="campo-form-cr">
-                    <label>Tipo de identificación</label>
-                    <input type="text" placeholder="CC/CE/PPT" class="input-cr">
+                    <label for="tipoIdentificacion">Tipo de identificación</label>
+                    <input type="text" id="tipoIdentificacion" placeholder="CC/CE/PPT" class="input-cr">
                 </div>
-
+            
                 <div class="campo-form-cr">
-                    <label>Rol</label>
-                    <select class="input-cr">
+                    <label for="rol">Rol</label>
+                    <select id="rol" class="input-cr">
                         <option>Gestor</option>
                         <option>Administrador</option>
                         <option>Contador</option>
                     </select>
                 </div>
-
+            
                 <div class="campo-form-cr">
-                    <label>Identificación</label>
-                    <input type="text" class="input-cr">
+                    <label for="identificacion">Identificación</label>
+                    <input type="text" id="identificacion" class="input-cr">
                 </div>
-
-
+            
                 <div class="campo-form-cr">
-                    <label>Correo</label>
-                    <input type="email" class="input-cr">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" class="input-cr">
                 </div>
-
-
+            
                 <div class="campo-form-cr">
-                    <label>UserName</label>
-                    <input type="text" class="input-cr">
+                    <label for="username">UserName</label>
+                    <input type="text" id="username" class="input-cr">
                 </div>
-
-
+            
                 <div class="campo-form-cr">
-                    <label>Código Empleado</label>
-                    <input type="text" class="input-cr">
+                    <label for="codigoEmpleado">Código Empleado</label>
+                    <input type="text" id="codigoEmpleado" class="input-cr">
                 </div>
-
-
+            
                 <div class="campo-form-cr">
-                    <label>Contraseña</label>
-                    <input type="password" class="input-cr">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña" class="input-cr">
                 </div>
-
+            
                 <div class="campo-form-cr">
-                    <label>Estado</label>
-                    <select class="input-cr">
+                    <label for="estado">Estado</label>
+                    <select id="estado" class="input-cr">
                         <option>Activo</option>
                         <option>Inactivo</option>
                     </select>
                 </div>
-
+            
                 <div class="boton-crear-wrapper-cr">
-                   <!----<a href="#" class="boton-crear-container-cr">Crear Usuario</a> -->
                     <button type="submit" class="boton-crear-container-cr">Crear Usuario</button>
                 </div>
             </form>
@@ -149,7 +142,46 @@
 
     </div>
 
-    <script src="Create.js"></script>
 </body>
+<script>
+    document.querySelector('#formulario-cr').addEventListener('submit', function (event) {
+        event.preventDefault(); // Evita que el formulario se envíe
+
+        // Captura los datos del formulario
+        const datosFormulario = {
+            nombres: document.getElementById('nombres').value,
+            accesos: document.getElementById('accesos').value,
+            apellidos: document.getElementById('apellidos').value,
+            cargo: document.getElementById('cargo').value,
+            tipoIdentificacion: document.getElementById('tipoIdentificacion').value,
+            rol: document.getElementById('rol').value,
+            identificacion: document.getElementById('identificacion').value,
+            correo: document.getElementById('correo').value,
+            username: document.getElementById('username').value,
+            codigoEmpleado: document.getElementById('codigoEmpleado').value,
+            contraseña: document.getElementById('contraseña').value,
+            estado: document.getElementById('estado').value
+        };
+
+        // Convierte los datos a formato JSON
+        const jsonDatos = JSON.stringify(datosFormulario, null, 2);
+
+        // Crea un archivo descargable
+        const blob = new Blob([jsonDatos], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+
+        // Crea un enlace para descargar el archivo
+        const enlace = document.createElement('a');
+        enlace.href = url;
+        enlace.download = 'datos_usuario.json'; // Nombre del archivo
+        enlace.click();
+
+        // Limpia el objeto URL
+        URL.revokeObjectURL(url);
+
+        // Redirige al usuario de vuelta a la misma página
+     // window.location.href = 'Crearusuario.html';
+    });
+</script>
 
 </html>
